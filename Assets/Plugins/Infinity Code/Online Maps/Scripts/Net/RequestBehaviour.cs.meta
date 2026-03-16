@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e05a5ff31d52e764cbdf9eef4266254d
+timeCreated: 1538841358
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Net/RequestBehaviour.cs
+  uploadId: 864046

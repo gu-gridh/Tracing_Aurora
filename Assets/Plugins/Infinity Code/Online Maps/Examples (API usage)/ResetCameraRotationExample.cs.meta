@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a46997be6b860ad45a4832f451552b2b
+timeCreated: 18446744011573954816
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples (API usage)/ResetCameraRotationExample.cs
+  uploadId: 864046

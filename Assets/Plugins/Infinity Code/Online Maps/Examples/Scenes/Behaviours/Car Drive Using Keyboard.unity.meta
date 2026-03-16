@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 631d78d0090c135449f8c6bd9ae0b15b
+timeCreated: 1540219194
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Scenes/Behaviours/Car
+    Drive Using Keyboard.unity
+  uploadId: 864046

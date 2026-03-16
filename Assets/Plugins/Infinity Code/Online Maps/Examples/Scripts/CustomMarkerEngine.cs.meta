@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: da6424ff98e186f4aa9b346a03821bce
+timeCreated: 1540199465
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Scripts/CustomMarkerEngine.cs
+  uploadId: 864046

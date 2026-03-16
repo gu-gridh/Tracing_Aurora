@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 181618d3b33b5a04d840c9ac1769b1fd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Lightings/UI CompassSettings.lighting
+  uploadId: 864046

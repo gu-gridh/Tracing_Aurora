@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe3c25772956c8841a17408582e704df
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Lightings/Custom MarkersSettings.lighting
+  uploadId: 864046

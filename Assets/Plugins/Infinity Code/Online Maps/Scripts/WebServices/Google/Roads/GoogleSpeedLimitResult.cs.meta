@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0ba1396f70ff4279af223d36e01f9aea
+timeCreated: 1738624181
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/Google/Roads/GoogleSpeedLimitResult.cs
+  uploadId: 864046

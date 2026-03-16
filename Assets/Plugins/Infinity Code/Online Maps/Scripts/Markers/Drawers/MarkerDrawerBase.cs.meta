@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a25b951350968e142badc084f8a8ceb2
+timeCreated: 1505742827
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Markers/Drawers/MarkerDrawerBase.cs
+  uploadId: 864046

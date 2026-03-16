@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: eff8c4887f2e4eb39f0fdd01fe816207
+timeCreated: 1738624622
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/OpenStreetMap/Naminatim/OSMNominatimRequestBase.cs
+  uploadId: 864046

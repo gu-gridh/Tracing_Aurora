@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 68bd844655166d447a387bad288f35b7
+timeCreated: 1514652070
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Scripts/ZoomArea.cs
+  uploadId: 864046

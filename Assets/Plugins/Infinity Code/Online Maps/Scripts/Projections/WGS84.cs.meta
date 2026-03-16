@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5eef4dc7435fb4541999a8bb71bc01fa
+timeCreated: 18446744011573954816
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Projections/WGS84.cs
+  uploadId: 864046

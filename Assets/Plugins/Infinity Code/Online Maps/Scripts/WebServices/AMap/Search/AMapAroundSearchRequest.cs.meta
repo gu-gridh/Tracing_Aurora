@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 6599e391a5334449bc13e51946254ee2
+timeCreated: 1738622430
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/AMap/Search/AMapAroundSearchRequest.cs
+  uploadId: 864046

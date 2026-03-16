@@ -1,0 +1,22 @@
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Unity crash dumps
+mono_crash.*
+*.blob
+*.json
+
+# Build outputs
+*.apk
+*.aab
+*.unitypackage
+
+# Mac
+.DS_Store
+
+Assets/_Recovery/

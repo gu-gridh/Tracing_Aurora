@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 2f9af760ca6a43e7ad3fbcfa55d88811
+timeCreated: 1737386809
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Structures/MercatorRect.cs
+  uploadId: 864046

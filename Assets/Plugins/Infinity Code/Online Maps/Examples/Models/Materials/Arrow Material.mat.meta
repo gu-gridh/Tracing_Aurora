@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1c4c9615f50d8824fb9642c823132dee
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Models/Materials/Arrow
+    Material.mat
+  uploadId: 864046

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 6033647a003b4c9faeec7f75786517eb
+timeCreated: 1726692830
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Editor/PropertyDrawers/GeoPointPropertyDrawer.cs
+  uploadId: 864046

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fd15047b3263ded42beebeb4c01e73f7
+timeCreated: 1538842042
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Scenes/Features/UI
+    Bubble Popup.unity
+  uploadId: 864046

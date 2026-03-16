@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c43ad0c1272147948a13ffb0fad130de
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Prefabs/Aircraft.prefab
+  uploadId: 864046

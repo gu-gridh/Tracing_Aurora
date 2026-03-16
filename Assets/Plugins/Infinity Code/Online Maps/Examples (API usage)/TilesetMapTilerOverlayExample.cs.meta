@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c17dd77b26fdd574ab7abbc637654419
+timeCreated: 18446744011573954816
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples (API usage)/TilesetMapTilerOverlayExample.cs
+  uploadId: 864046

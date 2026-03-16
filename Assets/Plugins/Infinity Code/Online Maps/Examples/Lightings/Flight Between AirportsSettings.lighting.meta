@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5e2a18d41580eec4ab56c9a7e0d0b658
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Lightings/Flight Between
+    AirportsSettings.lighting
+  uploadId: 864046

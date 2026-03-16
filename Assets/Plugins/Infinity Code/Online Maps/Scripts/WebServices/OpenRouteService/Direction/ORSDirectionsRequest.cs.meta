@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: db13f6eb44174c546a125e72df821723
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/OpenRouteService/Direction/ORSDirectionsRequest.cs
+  uploadId: 864046

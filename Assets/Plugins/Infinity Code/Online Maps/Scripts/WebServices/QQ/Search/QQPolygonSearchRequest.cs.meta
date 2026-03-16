@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c5c22a1cb2f840f6b36c93676e30534f
+timeCreated: 1738624720
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/QQ/Search/QQPolygonSearchRequest.cs
+  uploadId: 864046

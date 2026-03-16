@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 23e9fb5467eadf54cb1bc6c1f29edac7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Drawing/Drawers/RectangleDynamicMeshDrawer.cs
+  uploadId: 864046

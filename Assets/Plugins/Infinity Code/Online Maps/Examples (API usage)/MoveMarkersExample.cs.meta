@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3bc9a88ca5c08a445b76da641cd16c12
+timeCreated: 18446744011573954816
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples (API usage)/MoveMarkersExample.cs
+  uploadId: 864046

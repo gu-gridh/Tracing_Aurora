@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f0bc96f4ad960f84d9de10ae44ca7d93
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Lightings/Tileset
+    (Recommended for most cases)Settings.lighting
+  uploadId: 864046

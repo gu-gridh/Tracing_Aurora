@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f9a9fdac2c997144abeb576e0876ed8f
+timeCreated: 1557134520
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Shaders/TilesetPBRDrawingElement.shadergraph
+  uploadId: 864046

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0afd36a48501467c8ff6a41dc7abe40b
+timeCreated: 1737562577
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Attributes/JsonNonSerializedAttribute.cs
+  uploadId: 864046

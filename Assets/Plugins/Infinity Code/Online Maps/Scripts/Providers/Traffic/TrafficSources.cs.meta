@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: c099c48a33c947c29f7ba386db641034
+timeCreated: 1742853632
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Providers/Traffic/TrafficSources.cs
+  uploadId: 864046

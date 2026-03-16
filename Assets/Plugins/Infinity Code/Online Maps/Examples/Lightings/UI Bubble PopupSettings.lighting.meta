@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4426eec79114ef942bffea5f0e2a7549
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Lightings/UI Bubble
+    PopupSettings.lighting
+  uploadId: 864046

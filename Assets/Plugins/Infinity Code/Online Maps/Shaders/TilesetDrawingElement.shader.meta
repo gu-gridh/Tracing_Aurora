@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 07fd051d8972c7a4bac96bfa8038d08b
+timeCreated: 18446744011573954816
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Shaders/TilesetDrawingElement.shader
+  uploadId: 864046

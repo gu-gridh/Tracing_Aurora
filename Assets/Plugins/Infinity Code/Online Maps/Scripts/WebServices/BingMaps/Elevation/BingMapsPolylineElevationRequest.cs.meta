@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 96992268fa784db0b377be8beb7b9497
+timeCreated: 1738622644
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/BingMaps/Elevation/BingMapsPolylineElevationRequest.cs
+  uploadId: 864046

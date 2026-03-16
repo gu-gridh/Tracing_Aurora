@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4813c8af01184699abdd7aaff23e1a50
+timeCreated: 1738622684
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/BingMaps/Elevation/BingMapsElevationRequestBase.cs
+  uploadId: 864046

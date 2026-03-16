@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cc74d44cc5315d3489f23c1a5e7189da
+timeCreated: 18446744011573954816
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Scenes/Behaviours/Fly.unity
+  uploadId: 864046

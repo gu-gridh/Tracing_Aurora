@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c7278f82704775540a33aa084bb330a5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Editor/Editors/Controls/ControlBase3DEditor.cs
+  uploadId: 864046

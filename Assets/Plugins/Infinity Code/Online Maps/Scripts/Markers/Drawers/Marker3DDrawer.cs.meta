@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: faaf5e26bf85f6d43ad343cae4440bf8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Markers/Drawers/Marker3DDrawer.cs
+  uploadId: 864046

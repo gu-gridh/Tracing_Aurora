@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 81f8345367d09a54bbfebcfda7c2143e
+timeCreated: 1516020488
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples (API usage)/ColorUnderCursorExample.cs
+  uploadId: 864046

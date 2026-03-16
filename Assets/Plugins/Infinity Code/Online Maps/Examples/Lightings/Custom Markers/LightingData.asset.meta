@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 03e4e63cf95b638479011ce68d3fa8a9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Lightings/Custom Markers/LightingData.asset
+  uploadId: 864046

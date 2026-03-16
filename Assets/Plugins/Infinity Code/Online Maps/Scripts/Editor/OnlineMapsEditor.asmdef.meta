@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c4bd56766d775e44daf38e403338a0bc
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Editor/OnlineMapsEditor.asmdef
+  uploadId: 864046

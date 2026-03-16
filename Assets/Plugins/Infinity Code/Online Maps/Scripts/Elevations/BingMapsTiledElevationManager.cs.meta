@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f2dca0dab74e4ac4aa8f3682fd420b67
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 46d686dd807818a4e91ed090e33bb397, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Elevations/BingMapsTiledElevationManager.cs
+  uploadId: 864046

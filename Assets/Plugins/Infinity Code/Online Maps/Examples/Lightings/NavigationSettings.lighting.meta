@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6f13efd84f2ea343b85ffe8f2d2f012
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Lightings/NavigationSettings.lighting
+  uploadId: 864046

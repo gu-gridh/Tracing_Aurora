@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 58af21ddba8340378c757b7d9088a6c0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: d8ca578ed41d28a4bac3b9fda3b61529, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Plugins/WebRequestProxy.cs
+  uploadId: 864046

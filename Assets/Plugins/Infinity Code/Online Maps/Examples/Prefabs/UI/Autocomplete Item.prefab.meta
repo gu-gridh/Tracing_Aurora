@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb012ea05b32d5c4bb400f0d02bc1a8e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Prefabs/UI/Autocomplete
+    Item.prefab
+  uploadId: 864046

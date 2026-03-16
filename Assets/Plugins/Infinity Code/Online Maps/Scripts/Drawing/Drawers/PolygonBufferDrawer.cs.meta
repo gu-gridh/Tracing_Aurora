@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: dd284dafb824c5046980d80ff5795ee2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Drawing/Drawers/PolygonBufferDrawer.cs
+  uploadId: 864046

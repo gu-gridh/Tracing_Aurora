@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e951aa0c126d1a7409bfec1296857a7b
+timeCreated: 18446744011573954816
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Shaders/TilesetCutoutShader.shader
+  uploadId: 864046

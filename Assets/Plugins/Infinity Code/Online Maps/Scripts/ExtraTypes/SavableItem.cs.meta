@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8c8e86d5bbe9134488a26150e40204ff
+timeCreated: 1504746538
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/ExtraTypes/SavableItem.cs
+  uploadId: 864046

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0f9f45a211b39cd4189cdb21c2366bcc
+timeCreated: 1540207206
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Scenes/Features/Custom
+    Markers.unity
+  uploadId: 864046

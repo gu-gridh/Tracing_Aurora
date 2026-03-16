@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: cab420b544ebffd4cab5125a44e13a3b
+timeCreated: 1559047162
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Examples/Scripts/HorizonWithoutElevation.cs
+  uploadId: 864046

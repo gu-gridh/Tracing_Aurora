@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 5fd268e8d8c74bcbbbe5f0f805ce1a87
+timeCreated: 1738624750
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/QQ/Search/QQNearbySearchRequest.cs
+  uploadId: 864046

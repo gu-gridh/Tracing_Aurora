@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 53f849b9e61c5934e8170c77d1d4bdd2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/Drawing/Drawers/DrawingElementDrawerBase.cs
+  uploadId: 864046

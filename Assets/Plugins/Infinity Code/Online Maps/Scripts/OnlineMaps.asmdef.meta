@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 711ba16d2f300ce498103120e3e6a421
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/OnlineMaps.asmdef
+  uploadId: 864046

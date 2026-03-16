@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 742461932844464dbf50a97647bd4cc6
+timeCreated: 1738624398
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/OpenRouteService/Geocoding/ORSGeocodeRequest.cs
+  uploadId: 864046

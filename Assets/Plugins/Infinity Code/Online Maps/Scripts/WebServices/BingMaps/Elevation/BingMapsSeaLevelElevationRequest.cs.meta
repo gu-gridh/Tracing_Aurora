@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: e5fc3ba8c7de461783751e2b826a12e8
+timeCreated: 1738622676
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/BingMaps/Elevation/BingMapsSeaLevelElevationRequest.cs
+  uploadId: 864046

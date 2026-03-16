@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ca5702da12b44545ad3a931cc02cdc96
+timeCreated: 1738624735
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/QQ/Search/QQRectangleSearchRequest.cs
+  uploadId: 864046

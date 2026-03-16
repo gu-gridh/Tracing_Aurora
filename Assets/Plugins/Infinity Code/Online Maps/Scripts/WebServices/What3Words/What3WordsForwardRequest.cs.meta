@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0e28df449e254dbf9034e162242730af
+timeCreated: 1738624935
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297114
+  packageName: Online Maps v4
+  packageVersion: 4.5
+  assetPath: Assets/Plugins/Infinity Code/Online Maps/Scripts/WebServices/What3Words/What3WordsForwardRequest.cs
+  uploadId: 864046
