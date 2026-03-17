@@ -47,6 +47,9 @@ public class MapControl : MonoBehaviour
     public List<MarkerAudio> markerAudio = new List<MarkerAudio>();
 
     [Header("UI + Wolf Animation")]
+    [Tooltip("GameObject to show while the player is in XR and has not placed the wolf yet.")]
+    public GameObject spawnInstructionUI;
+
     [Tooltip("GameObject to show/hide (usually your button or a panel that contains the button).")]
     public GameObject wolfActionButton;
 
@@ -80,8 +83,7 @@ public class MapControl : MonoBehaviour
         xrOrigin.SetActive(false);
         mapCamera.enabled = true;
 
-        //hide the button until wolf spawns
-        if (wolfActionButton) wolfActionButton.SetActive(false);
+        RefreshUIState();
 
         //logs
         var markers2D = map.marker2DManager.items;
@@ -93,7 +95,7 @@ public class MapControl : MonoBehaviour
                 double lon = m.location.x;
                 double lat = m.location.y;
                 string label = string.IsNullOrEmpty(m.label) ? "(no label)" : m.label;
-                Debug.Log($"Marker \"{label}\" → lat:{lat:F6} lon:{lon:F6}");
+                //Debug.Log($"Marker \"{label}\" → lat:{lat:F6} lon:{lon:F6}");
             }
         }
     }
@@ -172,16 +174,16 @@ public class MapControl : MonoBehaviour
             pendingMarkerLabel = null;
             lastPlayedLabel = null;
 
-            //leaving XR: remove wolf + hide button
+            //leaving XR: remove wolf and reset UI
             if (wolfInstance != null)
             {
                 Destroy(wolfInstance);
                 wolfInstance = null;
                 wolfAnimator = null;
             }
-
-            if (wolfActionButton) wolfActionButton.SetActive(false);
         }
+
+        RefreshUIState();
 
         Debug.Log($"MapControl: Inside={isInside} distance={nearestMeters:0.0}m nearestLabel=\"{nearestMarker.label}\"");
     }
@@ -206,11 +208,19 @@ public class MapControl : MonoBehaviour
 
         wolfAnimator = wolfInstance.GetComponentInChildren<Animator>(true);
 
-        //show the button now that the wolf exists
-        if (wolfActionButton) wolfActionButton.SetActive(true);
+        RefreshUIState();
 
         //play audio only after the wolf is spawned 
         TryPlayAudioForLabel(pendingMarkerLabel);
+    }
+
+    private void RefreshUIState()
+    {
+        if (spawnInstructionUI)
+            spawnInstructionUI.SetActive(isInside && wolfInstance == null);
+
+        if (wolfActionButton)
+            wolfActionButton.SetActive(isInside && wolfInstance != null);
     }
 
     private void TryPlayAudioForLabel(string label)
