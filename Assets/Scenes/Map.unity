@@ -2859,8 +2859,8 @@ MonoBehaviour:
       minLimit: 1
     _enabled: 1
     _location:
-      x: 11.985139006444006
-      y: 57.69432655759376
+      x: 11.985029761742203
+      y: 57.69411549609212
     _rotation: 0
     _scale: 1
     expand: 1
@@ -3828,8 +3828,8 @@ MonoBehaviour:
       minLimit: 1
     _enabled: 1
     _location:
-      x: 11.985139006444006
-      y: 57.69432655759376
+      x: 11.985029761742203
+      y: 57.69411549609212
     _rotation: 0
     _scale: 3
     expand: 1
@@ -3956,7 +3956,7 @@ MonoBehaviour:
   useGPSEmulator: 1
   desiredAccuracy: 1
   requestPermissionRuntime: 1
-  updateDistance: 5
+  updateDistance: 3
 --- !u!114 &753158070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8339,7 +8339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MapControl
   map: {fileID: 753158066}
   enterDistanceMeters: 5
-  exitDistanceMeters: 10
+  exitDistanceMeters: 15
   switchCooldownSeconds: 5
   xrOrigin: {fileID: 187622870}
   mapCamera: {fileID: 430738980}
@@ -8350,9 +8350,9 @@ MonoBehaviour:
   audioSource: {fileID: 1836792876}
   markerAudio:
   - label: Marker 1
-    clip: {fileID: 8300000, guid: c0ae87845b7e64674ab5d8f9aa23ba6e, type: 3}
+    clip: {fileID: 8300000, guid: 4dfac8d264b344ea5b78a0acee81deed, type: 3}
   - label: Marker 4
-    clip: {fileID: 8300000, guid: 9345c3a539606499c9f0bded6f4e70e1, type: 3}
+    clip: {fileID: 8300000, guid: 8479caa0f85de496eb8ab4879f2eecfd, type: 3}
   spawnInstructionUI: {fileID: 100711954}
   wolfActionButton: {fileID: 151645728}
   wolfAnimatorTriggerName: Action
