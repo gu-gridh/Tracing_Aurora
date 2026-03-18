@@ -174,6 +174,9 @@ public class MapControl : MonoBehaviour
             pendingMarkerLabel = null;
             lastPlayedLabel = null;
 
+            if (audioSource)
+                audioSource.Stop();
+
             //leaving XR: remove wolf and reset UI
             if (wolfInstance != null)
             {
