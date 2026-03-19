@@ -12,13 +12,19 @@ public class MapControl : MonoBehaviour
     public Map map;
 
     [Header("GPS Trigger Distances (meters)")]
-    public float enterDistanceMeters = 20f;
-    public float exitDistanceMeters = 35f;
+    public float enterDistanceMeters = 10f;
+    public float exitDistanceMeters = 15f;
     public float switchCooldownSeconds = 2f;
 
     [Header("View Switching")]
-    public GameObject xrOrigin;
+    public Camera xrOriginCamera;
     public Camera mapCamera;
+
+    [Tooltip("Shown when the player is near a marker and can switch into XR.")]
+    public GameObject enterXRButton;
+
+    [Tooltip("Shown while the player is in XR so they can return to the map.")]
+    public GameObject exitXRButton;
 
     [Header("Tap-to-Spawn (XR)")]
     [Tooltip("Drag the Screen Space Ray Interactor (has XRRayInteractor).")]
@@ -58,19 +64,21 @@ public class MapControl : MonoBehaviour
 
     private UserLocation userLocation;
     private bool isInside;
-    private float nextAllowedSwitchTime;
+    private bool isInXRView;
 
     private GameObject wolfInstance;
     private Animator wolfAnimator;
 
     private string pendingMarkerLabel;
     private string lastPlayedLabel;
+    private bool isWaitingForAudioToFinish;
+    private bool hasAudioFinishedForCurrentEntry = true;
 
     private void Start()
     {
         userLocation = UserLocation.instance;
 
-        if (!userLocation || !map || !xrOrigin || !mapCamera || !arInteractor || !xrCamera || !wolfPrefab)
+        if (!userLocation || !map || !xrOriginCamera || !mapCamera || !arInteractor || !xrCamera || !wolfPrefab)
         {
             Debug.LogError("MapControl: Missing required references.");
             enabled = false;
@@ -79,25 +87,10 @@ public class MapControl : MonoBehaviour
 
         userLocation.OnLocationChanged += CheckArrival;
 
-        //start in map view
-        xrOrigin.SetActive(false);
+        xrOriginCamera.enabled = false;
         mapCamera.enabled = true;
 
         RefreshUIState();
-
-        //logs
-        var markers2D = map.marker2DManager.items;
-        if (markers2D != null)
-        {
-            Debug.Log($"MapControl: Found {markers2D.Count} marker(s)");
-            foreach (var m in markers2D)
-            {
-                double lon = m.location.x;
-                double lat = m.location.y;
-                string label = string.IsNullOrEmpty(m.label) ? "(no label)" : m.label;
-                //Debug.Log($"Marker \"{label}\" → lat:{lat:F6} lon:{lon:F6}");
-            }
-        }
     }
 
     private void OnDestroy()
@@ -108,7 +101,9 @@ public class MapControl : MonoBehaviour
 
     private void Update()
     {
-        if (!isInside) return;
+        UpdateAudioCompletionState();
+
+        if (!isInXRView) return;
 
         //only spawn once per XR entry
         if (wolfInstance != null) return;
@@ -125,45 +120,13 @@ public class MapControl : MonoBehaviour
 
     private void CheckArrival(GeoPoint userPoint)
     {
-        if (Time.time < nextAllowedSwitchTime) return;
+        if (!TryGetNearestMarker(userPoint, out Marker2D nearestMarker, out double nearestMeters))
+            return;
 
-        var markers2D = map.marker2DManager.items;
-        if (markers2D == null || markers2D.Count == 0) return;
+        bool wasInside = isInside;
+        string previousPendingMarkerLabel = pendingMarkerLabel;
 
-        double nearestMeters = double.MaxValue;
-        Marker2D nearestMarker = null;
-
-        foreach (var m in markers2D)
-        {
-            double dMeters = userPoint.Distance(m.location) * 1000.0;
-            if (dMeters < nearestMeters)
-            {
-                nearestMeters = dMeters;
-                nearestMarker = m;
-            }
-        }
-
-        if (nearestMarker == null) return;
-
-        bool desiredInside = isInside;
-
-        if (!isInside)
-        {
-            if (nearestMeters <= enterDistanceMeters) desiredInside = true;
-        }
-        else
-        {
-            if (nearestMeters >= exitDistanceMeters) desiredInside = false;
-        }
-
-        if (desiredInside == isInside) return;
-
-        isInside = desiredInside;
-        nextAllowedSwitchTime = Time.time + switchCooldownSeconds;
-
-        //switch views
-        xrOrigin.SetActive(isInside);
-        mapCamera.enabled = !isInside;
+        isInside = nearestMeters <= enterDistanceMeters;
 
         if (isInside)
         {
@@ -171,24 +134,39 @@ public class MapControl : MonoBehaviour
         }
         else
         {
-            pendingMarkerLabel = null;
-            lastPlayedLabel = null;
-
-            if (audioSource)
-                audioSource.Stop();
-
-            //leaving XR: remove wolf and reset UI
-            if (wolfInstance != null)
+            if (!isInXRView)
             {
-                Destroy(wolfInstance);
-                wolfInstance = null;
-                wolfAnimator = null;
+                pendingMarkerLabel = null;
+                lastPlayedLabel = null;
             }
         }
 
-        RefreshUIState();
+        if (wasInside == isInside && previousPendingMarkerLabel == pendingMarkerLabel)
+            return;
 
-        Debug.Log($"MapControl: Inside={isInside} distance={nearestMeters:0.0}m nearestLabel=\"{nearestMarker.label}\"");
+        RefreshUIState();
+    }
+
+    private bool TryGetNearestMarker(GeoPoint userPoint, out Marker2D nearestMarker, out double nearestMeters)
+    {
+        var markers2D = map.marker2DManager.items;
+        nearestMeters = double.MaxValue;
+        nearestMarker = null;
+
+        if (markers2D == null || markers2D.Count == 0)
+            return false;
+
+        foreach (var marker in markers2D)
+        {
+            double distanceMeters = userPoint.Distance(marker.location) * 1000.0;
+            if (distanceMeters < nearestMeters)
+            {
+                nearestMeters = distanceMeters;
+                nearestMarker = marker;
+            }
+        }
+
+        return nearestMarker != null;
     }
 
     private void TrySpawnAtCurrentHit()
@@ -219,17 +197,98 @@ public class MapControl : MonoBehaviour
 
     private void RefreshUIState()
     {
+        if (enterXRButton)
+            enterXRButton.SetActive(isInside && !isInXRView);
+
+        if (exitXRButton)
+            exitXRButton.SetActive(isInXRView && (!isInside || hasAudioFinishedForCurrentEntry));
+
         if (spawnInstructionUI)
-            spawnInstructionUI.SetActive(isInside && wolfInstance == null);
+            spawnInstructionUI.SetActive(isInXRView && wolfInstance == null);
 
         if (wolfActionButton)
-            wolfActionButton.SetActive(isInside && wolfInstance != null);
+            wolfActionButton.SetActive(isInXRView && wolfInstance != null);
+    }
+
+    public void EnterXRView()
+    {
+        if (!isInside)
+            return;
+
+        GeoPoint currentPoint = userLocation != null ? userLocation.location : GeoPoint.zero;
+        if (userLocation != null && TryGetNearestMarker(currentPoint, out Marker2D nearestMarker, out _))
+            pendingMarkerLabel = nearestMarker.label ?? pendingMarkerLabel;
+
+        SetViewState(true);
+    }
+
+    public void ExitXRView()
+    {
+        SetViewState(false);
+    }
+
+    private void SetViewState(bool showXR)
+    {
+        if (isInXRView == showXR) return;
+
+        isInXRView = showXR;
+        xrOriginCamera.enabled = isInXRView;
+        mapCamera.enabled = !isInXRView;
+
+        if (isInXRView)
+        {
+            hasAudioFinishedForCurrentEntry = false;
+            isWaitingForAudioToFinish = false;
+        }
+
+        if (!isInXRView)
+        {
+            lastPlayedLabel = null;
+            hasAudioFinishedForCurrentEntry = true;
+            isWaitingForAudioToFinish = false;
+
+            if (audioSource)
+                audioSource.Stop();
+
+            if (wolfInstance != null)
+            {
+                Destroy(wolfInstance);
+                wolfInstance = null;
+                wolfAnimator = null;
+            }
+        }
+
+        RefreshUIState();
+    }
+
+    private void UpdateAudioCompletionState()
+    {
+        if (!isInXRView) return;
+        if (!isWaitingForAudioToFinish) return;
+        if (audioSource != null && audioSource.isPlaying) return;
+
+        isWaitingForAudioToFinish = false;
+        hasAudioFinishedForCurrentEntry = true;
+        RefreshUIState();
     }
 
     private void TryPlayAudioForLabel(string label)
     {
-        if (!audioSource) return;
-        if (string.IsNullOrWhiteSpace(label)) return;
+        if (!audioSource)
+        {
+            hasAudioFinishedForCurrentEntry = true;
+            isWaitingForAudioToFinish = false;
+            RefreshUIState();
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(label))
+        {
+            hasAudioFinishedForCurrentEntry = true;
+            isWaitingForAudioToFinish = false;
+            RefreshUIState();
+            return;
+        }
 
         if (lastPlayedLabel == label) return;
 
@@ -245,17 +304,21 @@ public class MapControl : MonoBehaviour
                 audioSource.Play();
 
                 lastPlayedLabel = label;
-                Debug.Log($"MapControl: Playing audio for marker label \"{label}\"");
+                hasAudioFinishedForCurrentEntry = false;
+                isWaitingForAudioToFinish = true;
+                RefreshUIState();
                 return;
             }
         }
 
-        Debug.Log($"MapControl: No audio mapping found for label \"{label}\"");
+        hasAudioFinishedForCurrentEntry = true;
+        isWaitingForAudioToFinish = false;
+        RefreshUIState();
     }
 
     public void PlayWolfAnimation()
     {
-        if (!isInside) return;
+        if (!isInXRView) return;
         if (wolfInstance == null) return;
 
         if (wolfAnimator == null)
