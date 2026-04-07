@@ -158,6 +158,9 @@ public class MapControl : MonoBehaviour
 
         foreach (var marker in markers2D)
         {
+            if (marker == null || !marker.enabled) continue;
+            if (string.IsNullOrWhiteSpace(marker.label)) continue;
+
             double distanceMeters = userPoint.Distance(marker.location) * 1000.0;
             if (distanceMeters < nearestMeters)
             {
@@ -201,7 +204,7 @@ public class MapControl : MonoBehaviour
             enterXRButton.SetActive(isInside && !isInXRView);
 
         if (exitXRButton)
-            exitXRButton.SetActive(isInXRView && (!isInside || hasAudioFinishedForCurrentEntry));
+            exitXRButton.SetActive(isInXRView && hasAudioFinishedForCurrentEntry);
 
         if (spawnInstructionUI)
             spawnInstructionUI.SetActive(isInXRView && wolfInstance == null);
