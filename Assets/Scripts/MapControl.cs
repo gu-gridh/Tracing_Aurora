@@ -23,8 +23,8 @@ public class MapControl : MonoBehaviour
     [Tooltip("Shown when the player is near a marker and can switch into XR.")]
     public GameObject enterXRButton;
 
-    [Tooltip("Shown while the player is in XR so they can return to the map.")]
-    public GameObject exitXRButton;
+    [Tooltip("Shown while the player is in XR so they can return to the map at any time.")]
+    public GameObject closeXRButton;
 
     [Header("Tap-to-Spawn (XR)")]
     [Tooltip("Drag the Screen Space Ray Interactor (has XRRayInteractor).")]
@@ -203,8 +203,8 @@ public class MapControl : MonoBehaviour
         if (enterXRButton)
             enterXRButton.SetActive(isInside && !isInXRView);
 
-        if (exitXRButton)
-            exitXRButton.SetActive(isInXRView && hasAudioFinishedForCurrentEntry);
+        if (closeXRButton)
+            closeXRButton.SetActive(isInXRView);
 
         if (spawnInstructionUI)
             spawnInstructionUI.SetActive(isInXRView && wolfInstance == null);

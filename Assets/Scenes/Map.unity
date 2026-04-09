@@ -2274,7 +2274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OnlineMaps::OnlineMaps.Marker3DManager
   _items:
-  - label: 
+  - label: Park
     range:
       max: 20.999
       min: 1
@@ -2282,8 +2282,8 @@ MonoBehaviour:
       minLimit: 1
     _enabled: 1
     _location:
-      x: 11.984671
-      y: 57.694244
+      x: 11.983159
+      y: 57.69577
     _rotation: 0
     _scale: 1
     expand: 1
@@ -2291,41 +2291,7 @@ MonoBehaviour:
     altitudeType: 1
     sizeType: 0
     _prefab: {fileID: 893781904}
-  - label: 
-    range:
-      max: 20.999
-      min: 1
-      maxLimit: 20.999
-      minLimit: 1
-    _enabled: 0
-    _location:
-      x: 11.910478
-      y: 57.681855
-    _rotation: 0
-    _scale: 1
-    expand: 1
-    altitude: 0
-    altitudeType: 1
-    sizeType: 0
-    _prefab: {fileID: 893781904}
-  - label: 
-    range:
-      max: 20.999
-      min: 1
-      maxLimit: 20.999
-      minLimit: 1
-    _enabled: 0
-    _location:
-      x: 11.985691
-      y: 57.694994
-    _rotation: 0
-    _scale: 1
-    expand: 1
-    altitude: 0
-    altitudeType: 1
-    sizeType: 0
-    _prefab: {fileID: 893781904}
-  - label: 
+  - label: Pond
     range:
       max: 20.999
       min: 1
@@ -2333,8 +2299,8 @@ MonoBehaviour:
       minLimit: 1
     _enabled: 1
     _location:
-      x: 11.985029761742203
-      y: 57.69411549609212
+      x: 11.982901
+      y: 57.694662
     _rotation: 0
     _scale: 1
     expand: 1
@@ -2342,6 +2308,40 @@ MonoBehaviour:
     altitudeType: 1
     sizeType: 0
     _prefab: {fileID: 893781904}
+  - label: Rohsska
+    range:
+      max: 20.999
+      min: 1
+      maxLimit: 20.999
+      minLimit: 1
+    _enabled: 1
+    _location:
+      x: 11.973322
+      y: 57.700037
+    _rotation: 0
+    _scale: 1
+    expand: 1
+    altitude: 0
+    altitudeType: 1
+    sizeType: 0
+    _prefab: {fileID: 0}
+  - label: Corner
+    range:
+      max: 20.999
+      min: 1
+      maxLimit: 20.999
+      minLimit: 1
+    _enabled: 1
+    _location:
+      x: 11.9746
+      y: 57.700911
+    _rotation: 0
+    _scale: 1
+    expand: 1
+    altitude: 0
+    altitudeType: 1
+    sizeType: 0
+    _prefab: {fileID: 0}
   defaultScale: 0.5
   allowAddMarker3DByN: 1
   defaultPrefab: {fileID: 893781904}
@@ -3016,7 +3016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OnlineMaps::OnlineMaps.Marker2DManager
   _items:
-  - label: Marker 1
+  - label: Park
     range:
       max: 20.999
       min: 1
@@ -3024,44 +3024,14 @@ MonoBehaviour:
       minLimit: 1
     _enabled: 1
     _location:
-      x: 11.984671
-      y: 57.694244
+      x: 11.983159
+      y: 57.69577
     _rotation: 0
     _scale: 3
     expand: 1
     align: 7
     _texture: {fileID: 0}
-  - label: Marker 2
-    range:
-      max: 20.999
-      min: 1
-      maxLimit: 20.999
-      minLimit: 1
-    _enabled: 0
-    _location:
-      x: 11.910478
-      y: 57.681855
-    _rotation: 0
-    _scale: 3
-    expand: 1
-    align: 7
-    _texture: {fileID: 0}
-  - label: Marker 3
-    range:
-      max: 20.999
-      min: 1
-      maxLimit: 20.999
-      minLimit: 1
-    _enabled: 0
-    _location:
-      x: 11.985691
-      y: 57.694994
-    _rotation: 0
-    _scale: 3
-    expand: 1
-    align: 7
-    _texture: {fileID: 0}
-  - label: Marker 4
+  - label: Pond
     range:
       max: 20.999
       min: 1
@@ -3069,8 +3039,38 @@ MonoBehaviour:
       minLimit: 1
     _enabled: 1
     _location:
-      x: 11.985029761742203
-      y: 57.69411549609212
+      x: 11.982901
+      y: 57.694662
+    _rotation: 0
+    _scale: 3
+    expand: 1
+    align: 7
+    _texture: {fileID: 0}
+  - label: Rohsska
+    range:
+      max: 20.999
+      min: 1
+      maxLimit: 20.999
+      minLimit: 1
+    _enabled: 1
+    _location:
+      x: 11.973322
+      y: 57.700037
+    _rotation: 0
+    _scale: 3
+    expand: 1
+    align: 7
+    _texture: {fileID: 0}
+  - label: Corner
+    range:
+      max: 20.999
+      min: 1
+      maxLimit: 20.999
+      minLimit: 1
+    _enabled: 1
+    _location:
+      x: 11.9746
+      y: 57.700911
     _rotation: 0
     _scale: 3
     expand: 1
@@ -5166,19 +5166,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae88281d5c44203ad98f31a85dc880, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.4055798
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae88281d5c44203ad98f31a85dc880, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.4055798
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae88281d5c44203ad98f31a85dc880, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.579228
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae88281d5c44203ad98f31a85dc880, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.579228
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae88281d5c44203ad98f31a85dc880, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5186,7 +5186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae88281d5c44203ad98f31a85dc880, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae88281d5c44203ad98f31a85dc880, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6247,6 +6247,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448137672}
   m_CullTransparentMesh: 1
+--- !u!1 &1454326824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454326825}
+  - component: {fileID: 1454326827}
+  - component: {fileID: 1454326826}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1454326825
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454326824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1666087464}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 30, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1454326826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454326824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9d007e31076424c35915894a90cd9e4c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1454326827
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454326824}
+  m_CullTransparentMesh: 1
 --- !u!1 &1554216250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6536,20 +6611,157 @@ MonoBehaviour:
   xrOriginCamera: {fileID: 1061896045}
   mapCamera: {fileID: 430738980}
   enterXRButton: {fileID: 782929097}
-  exitXRButton: {fileID: 771861562}
+  closeXRButton: {fileID: 1666087463}
   arInteractor: {fileID: 331264286}
   xrCamera: {fileID: 1061896046}
   wolfPrefab: {fileID: 7583761976762421512, guid: 3adf7043711614bc7bd83245a5e5dbc4, type: 3}
   requireHorizontalUpSurface: 1
   audioSource: {fileID: 1836792876}
   markerAudio:
-  - label: Marker 1
+  - label: Pond
     clip: {fileID: 8300000, guid: 4dfac8d264b344ea5b78a0acee81deed, type: 3}
-  - label: Marker 4
+  - label: Park
     clip: {fileID: 8300000, guid: 8479caa0f85de496eb8ab4879f2eecfd, type: 3}
+  - label: Rohsska
+    clip: {fileID: 8300000, guid: 8479caa0f85de496eb8ab4879f2eecfd, type: 3}
+  - label: Corner
+    clip: {fileID: 8300000, guid: 4dfac8d264b344ea5b78a0acee81deed, type: 3}
   spawnInstructionUI: {fileID: 100711954}
   wolfActionButton: {fileID: 1261001639}
   wolfAnimatorTriggerName: Action
+--- !u!1 &1666087463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666087464}
+  - component: {fileID: 1666087467}
+  - component: {fileID: 1666087466}
+  - component: {fileID: 1666087465}
+  m_Layer: 5
+  m_Name: Close
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1666087464
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666087463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1454326825}
+  m_Father: {fileID: 2099970469}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -295, y: 631}
+  m_SizeDelta: {x: 40, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1666087465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666087463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.9019608}
+    m_HighlightedColor: {r: 0, g: 0.5176471, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.43137255, g: 0.7411765, b: 1, a: 1}
+    m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.9019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1666087466}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1590052560}
+        m_TargetAssemblyTypeName: MapControl, Assembly-CSharp
+        m_MethodName: ExitXRView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1666087466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666087463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7347b6042ec9e40c4a3cbd7077c91e67, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1666087467
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666087463}
+  m_CullTransparentMesh: 1
 --- !u!1 &1727480090
 GameObject:
   m_ObjectHideFlags: 0
@@ -7363,6 +7575,7 @@ RectTransform:
   - {fileID: 114824276}
   - {fileID: 100711955}
   - {fileID: 1261001640}
+  - {fileID: 1666087464}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
