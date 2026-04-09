@@ -2324,7 +2324,7 @@ MonoBehaviour:
     altitude: 0
     altitudeType: 1
     sizeType: 0
-    _prefab: {fileID: 0}
+    _prefab: {fileID: 893781904}
   - label: Corner
     range:
       max: 20.999
@@ -2341,7 +2341,7 @@ MonoBehaviour:
     altitude: 0
     altitudeType: 1
     sizeType: 0
-    _prefab: {fileID: 0}
+    _prefab: {fileID: 893781904}
   defaultScale: 0.5
   allowAddMarker3DByN: 1
   defaultPrefab: {fileID: 893781904}
